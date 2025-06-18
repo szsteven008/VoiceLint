@@ -8,3 +8,4 @@ This project uses the following third-party libraries:
 - [yaml-cpp](https://github.com/jbeder/yaml-cpp.git)
 - [imgui](https://github.com/ocornut/imgui.git)
 - [openai.cpp](https://github.com/szsteven008/openai.cpp.git)
+- [nlohmann/json](https://github.com/nlohmann/json.git)

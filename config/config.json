@@ -1,0 +1,53 @@
+{
+    "audio": {
+        "device": "BlackHole 2ch",
+        "sampleRate": 44100,
+        "framesPerBuffer": 1024,
+        "max_n_samples": 120000,
+        "save": true,
+        "output": "output/output.mp3"
+    },
+    "asr": {
+        "model_path": "models/SenseVoiceSmall",
+        "chunk_time": 8000,
+        "overlap_time": 1000,
+        "save": true,
+        "output": "output/asr.txt"
+    },
+    "llm": {
+        "schema_host_port": "http://localhost:8080",
+        "model": "Qwen3-8b",
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "top_k": 20,
+        "presence_penalty": 1.5,
+        "refine": {
+            "system_prompt": "res/prompt/refine.txt",
+            "chunk_size": 1024,
+            "refine_span": 120,
+            "save": true,
+            "output": "output/refine.txt"
+        },
+        "summarize": {
+            "system_prompt": "res/prompt/summarize.txt",
+            "save": true,
+            "output": "output/summarize.txt"
+        }
+    },
+    "ui": {
+        "name": "VoiceLint",
+        "width": 1280,
+        "height": 720,
+        "fonts": [
+            {
+                "filename": "res/fonts/MonaspaceRadonVarVF[wght,wdth,slnt].ttf",
+                "size": 13.0
+            },
+            {
+                "filename": "res/fonts/LXGWWenKai-Regular.ttf",
+                "size": 13.0,
+                "language": "chinese"
+            }
+        ]
+    }
+}

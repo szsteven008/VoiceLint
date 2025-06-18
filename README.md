@@ -77,3 +77,5 @@ MIT License.
 	• llama.cpp by Georgi Gerganov
 	• Qwen3 by Alibaba Group
 	• Dear ImGui by Omar Cornut
+ 	• json by Niels Lohmann
+  	• stb by Sean Barrett

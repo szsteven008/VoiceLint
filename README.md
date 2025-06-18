@@ -55,10 +55,10 @@ graph LR
 ---
 
 ## 🔧 Build Instructions
-git clone https://github.com/szsteven008/VoiceLint.git
-cd VoiceLint
-cmake -B build
-cmake --build build --config release -j 8
+	git clone https://github.com/szsteven008/VoiceLint.git
+	cd VoiceLint
+	cmake -B build
+	cmake --build build --config release -j 8
 
 ---
 
